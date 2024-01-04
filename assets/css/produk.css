@@ -1,0 +1,91 @@
+/* Gaya untuk judul 'Produk' */
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+
+/* Gaya untuk kontainer produk */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Gaya untuk setiap kartu produk */
+
+.product-card {
+    flex: 1 0 calc(33.33% - 20px);
+    /* Ubah lebar kartu produk */
+    max-width: calc(33.33% - 20px);
+    /* Lebar maksimum untuk 3 kartu per baris */
+    min-width: calc(25% - 20px);
+    /* Lebar minimum untuk 4 kartu per baris */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+/* Gaya untuk gambar produk */
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* Gaya untuk detail produk */
+
+.product-details h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product-details p {
+    margin-bottom: 6px;
+}
+
+
+/* Gaya untuk tautan 'Tambah ke Keranjang' */
+
+.product-actions a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Mengelompokkan gaya yang serupa */
+
+.product-actions .detail {
+    background-color: #3498db;
+}
+
+.tambah {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    background-color: #2ecc71;
+}
